@@ -1,0 +1,215 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+.weDiv1 {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weDiv2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: aliceblue;
+  height: 95%;
+  width: 80%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.weDiv3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 30%;
+}
+.title {
+  display: flex;
+  height: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.map {
+  background-image: url('https://media.giphy.com/media/TAcwvGKo254ac/giphy.gif');
+  height: 90%;
+  width: 35%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+.a {
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+.temp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+  width: 35%;
+  height: 90%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+  background-image: url('https://th.bing.com/th/id/OIP.ZEQrrm7yorPd0IcaChpKSQHaF7?rs=1&pid=ImgDetMain');
+}
+.tempSpan {
+  font-size: 32px;
+}
+
+.humidity {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  color: whitesmoke;
+  width: 100%;
+  height: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://greystoneenergy.com/wp-content/uploads/2022/04/bigstock-Blue-Background-Of-Natural-Wat-448994423.jpg');
+}
+.wind {
+  background-image: url('https://media.giphy.com/media/NkHQ9lVRU8bTy/giphy.gif');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 40px;
+  margin-top: 10px;
+  height: 20%;
+}
+
+.forecast {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  color: white;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.forecast ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.forecast li {
+  margin-bottom: 10px;
+}
+
+.clear-weather {
+  background-image: url('https://wallpapercave.com/wp/wp5558569.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: inherit;
+}
+
+.cloudy-weather {
+  background-image: url('https://th.bing.com/th/id/R.c368c151faf535cb490de001c2c1aaaf?rik=fpJVMXzlrJQ3YA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f12%2fCloudy-Sky-Wallpaper-Widescreen.jpg&ehk=gIXk%2f%2f1Dq3%2f3SGZQXxvab6ULuknatJsk4IYUq9mHfPQ%3d&risl=&pid=ImgRaw&r=0');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+}
+
+.rainy-weather {
+  background-image: url('https://i.gifer.com/GYlk.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: inherit;
+}
+
+.default-weather {
+  background-image: url('https://th.bing.com/th/id/R.c13f3a8d6e10a2fad5e57497a262ca3a?rik=ehq6tcv0ed4tGQ&riu=http%3a%2f%2fs.myniceprofile.com%2fmyspacepic%2f1787%2f178785.gif&ehk=rkO0qbe%2blPFZO8PcvXbLKZ12B4nSL0pcVXZSJHJtUYI%3d&risl=&pid=ImgRaw&r=0');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: inherit;
+}
+
+.carousel-item {
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+}
+
+@media screen and (max-width: 810px) {
+  .weDiv1,
+  .weDiv12 {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .weDiv2 {
+    overflow: auto;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .weDiv3 {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .map,
+  .temp {
+    width: 100%;
+    height: 80%;
+
+    margin-bottom: 10px;
+  }
+
+  .humidity,
+  .wind {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+
+  .map {
+    background-position: center;
+    padding-right: 0;
+  }
+
+  .temp {
+    background-position: center;
+    padding-left: 50px;
+  }
+}

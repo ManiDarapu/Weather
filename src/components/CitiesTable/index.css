@@ -1,0 +1,103 @@
+.CiDiv1 {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center; /* Center the table horizontally */
+  align-items: center;
+  color: wheat;
+  padding: 10px; /* Add padding for mobile screens */
+  box-sizing: border-box; /* Include padding in the width/height calculation */
+}
+
+.search-input {
+  width: 30%;
+  padding: 5px;
+  padding-left: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.table-container {
+  height: 90%;
+  width: 100%; /* Full width of the viewport */
+  max-width: 1200px; /* Set a max-width for large screens */
+  overflow: auto;
+  border: 3px solid white; /* Border around the container */
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px wheat;
+  background-color: black; /* Match the background color */
+  box-sizing: border-box; /* Include padding/border in the width/height calculation */
+}
+
+.span {
+  align-self: flex-end;
+  color: white;
+}
+
+.table-wrapper {
+  height: calc(100vh - 100px); /* Adjust based on the height of your header */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.table {
+  width: 100%; /* Ensure the table takes full width of the container */
+  border-collapse: collapse;
+}
+
+.table th {
+  position: sticky;
+  top: 0;
+  background-color: black; /* Match the background color */
+  color: wheat; /* Match the text color */
+  z-index: 1; /* Ensure the header is above the table body */
+}
+
+.table th,
+.table td {
+  border: 1px solid white; /* Border color for cells */
+  padding: 8px;
+  text-align: left;
+  white-space: wrap; /* Prevent text from wrapping */
+}
+
+.table::-webkit-scrollbar {
+  display: none;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.table-wrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+@media (max-width: 860px) {
+  .CiDiv1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    display: none;
+  }
+
+  .table th,
+  .table td {
+    padding: 3px;
+    font-size: 10px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .table-wrapper {
+    height: auto;
+  }
+}
